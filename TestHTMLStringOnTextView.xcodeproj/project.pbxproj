@@ -15,6 +15,9 @@
 		18E2ABDC1D2A147000FA4CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E2ABDA1D2A147000FA4CDF /* LaunchScreen.storyboard */; };
 		18E2ABE71D2A147000FA4CDF /* TestHTMLStringOnTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E2ABE61D2A147000FA4CDF /* TestHTMLStringOnTextViewTests.m */; };
 		18E2ABF21D2A147000FA4CDF /* TestHTMLStringOnTextViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E2ABF11D2A147000FA4CDF /* TestHTMLStringOnTextViewUITests.m */; };
+		18E2AC011D2A14FB00FA4CDF /* UITextView+ShowHTMLString.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E2AC001D2A14FB00FA4CDF /* UITextView+ShowHTMLString.m */; };
+		18E2AC041D2A156A00FA4CDF /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E2AC031D2A156A00FA4CDF /* NSString+Addition.m */; };
+		18E2AC071D2A16E500FA4CDF /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E2AC061D2A16E500FA4CDF /* GTMNSString+HTML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		18E2ABED1D2A147000FA4CDF /* TestHTMLStringOnTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestHTMLStringOnTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E2ABF11D2A147000FA4CDF /* TestHTMLStringOnTextViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHTMLStringOnTextViewUITests.m; sourceTree = "<group>"; };
 		18E2ABF31D2A147000FA4CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E2ABFF1D2A14FB00FA4CDF /* UITextView+ShowHTMLString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+ShowHTMLString.h"; sourceTree = "<group>"; };
+		18E2AC001D2A14FB00FA4CDF /* UITextView+ShowHTMLString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ShowHTMLString.m"; sourceTree = "<group>"; };
+		18E2AC021D2A156A00FA4CDF /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
+		18E2AC031D2A156A00FA4CDF /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
+		18E2AC051D2A16E500FA4CDF /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		18E2AC061D2A16E500FA4CDF /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,7 @@
 				18E2ABD01D2A147000FA4CDF /* AppDelegate.m */,
 				18E2ABD21D2A147000FA4CDF /* ViewController.h */,
 				18E2ABD31D2A147000FA4CDF /* ViewController.m */,
+				18E2AC0E1D2A42CF00FA4CDF /* Catagories */,
 				18E2ABD51D2A147000FA4CDF /* Main.storyboard */,
 				18E2ABD81D2A147000FA4CDF /* Assets.xcassets */,
 				18E2ABDA1D2A147000FA4CDF /* LaunchScreen.storyboard */,
@@ -138,6 +148,19 @@
 				18E2ABF31D2A147000FA4CDF /* Info.plist */,
 			);
 			path = TestHTMLStringOnTextViewUITests;
+			sourceTree = "<group>";
+		};
+		18E2AC0E1D2A42CF00FA4CDF /* Catagories */ = {
+			isa = PBXGroup;
+			children = (
+				18E2AC051D2A16E500FA4CDF /* GTMNSString+HTML.h */,
+				18E2AC061D2A16E500FA4CDF /* GTMNSString+HTML.m */,
+				18E2AC021D2A156A00FA4CDF /* NSString+Addition.h */,
+				18E2AC031D2A156A00FA4CDF /* NSString+Addition.m */,
+				18E2ABFF1D2A14FB00FA4CDF /* UITextView+ShowHTMLString.h */,
+				18E2AC001D2A14FB00FA4CDF /* UITextView+ShowHTMLString.m */,
+			);
+			name = Catagories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E2AC011D2A14FB00FA4CDF /* UITextView+ShowHTMLString.m in Sources */,
 				18E2ABD41D2A147000FA4CDF /* ViewController.m in Sources */,
 				18E2ABD11D2A147000FA4CDF /* AppDelegate.m in Sources */,
 				18E2ABCE1D2A147000FA4CDF /* main.m in Sources */,
+				18E2AC041D2A156A00FA4CDF /* NSString+Addition.m in Sources */,
+				18E2AC071D2A16E500FA4CDF /* GTMNSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
